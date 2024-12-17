@@ -29,6 +29,10 @@ param(
 )
 
 
+<# Variablen #>
+$ErrorActionPreference = 'Stop'
+
+
 <# Programm #>
 $Extension = "*.$Extension"
 foreach ($file in Get-ChildItem -Path $CertPath -File -Filter $Extension -Recurse) {
